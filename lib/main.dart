@@ -125,94 +125,45 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Column(
               children: <Widget>[
-                Row(
-                  children: <Widget>[
-                    Container(
-                      alignment: Alignment.topLeft,
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 1,
-                        ),
-                      ),
-                      child: Image.asset('assets/images/pique.jpg'),
+                Container(
+                  alignment: Alignment.topLeft,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
                     ),
-                    SizedBox(
-                      width: 50,
-                      height: 20,
-                    ),
-                    Column(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.black,
-                                  width: 1,
-                                ),
+                  ),
+                  child: Row(
+                    children: <Widget>[
+                      Image.asset('assets/images/pique.jpg'),
+                      Row(
+                        children: [
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.black,
+                                width: 1,
                               ),
-                              child: Text(
-                                  'Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat'),
                             ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-                SizedBox(height: 30),
-                Column(
-                  children: <Widget>[
-                    Row(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.black,
-                              width: 1,
-                            ),
+                            child: Text(
+                                'Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat'),
                           ),
-                          child: Text('Barcelona, 21 Februrari 2022'),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-                SizedBox(height: 50),
-                Row(
-                  children: <Widget>[
-                    Container(
-                      child: Image.asset('assets/images/pique.jpg'),
-                    ),
-                    SizedBox(width: 50, height: 20),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.black,
-                          width: 1,
-                        ),
+                        ],
                       ),
-                      child: Text(
-                          'Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat'),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-                SizedBox(height: 30),
-                Column(
-                  children: <Widget>[
-                    Row(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.black,
-                              width: 1,
-                            ),
-                          ),
-                          child: Text('Barcelona, 21 Februrari 2022'),
-                        ),
-                      ],
+                SizedBox(
+                  height: 50,
+                ),
+                Row(
+                  children: [
+                    Text(
+                      'Barcelona, 21 Februari 2022',
+                      textAlign: (TextAlign.left),
                     ),
                   ],
                 ),
