@@ -149,6 +149,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 SizedBox(width: 50, height: 20),
                 Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                  ),
                   child: Text(
                       'Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat'),
                 ),
