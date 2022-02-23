@@ -93,6 +93,15 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Column(
               children: [
+                Container(
+                  alignment: Alignment.topLeft,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 1,
+                    ),
+                  ),
+                ),
                 Image.asset('assets/images/costa.jpg'),
                 SizedBox(
                   height: 30,
@@ -114,56 +123,83 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(
               height: 20,
             ),
-            Row(
+            Column(
               children: <Widget>[
-                Container(
-                  alignment: Alignment.topLeft,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.black,
-                      width: 1,
+                Row(
+                  children: <Widget>[
+                    Container(
+                      alignment: Alignment.topLeft,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.black,
+                          width: 1,
+                        ),
+                      ),
+                      child: Image.asset('assets/images/pique.jpg'),
                     ),
-                  ),
-                  child: Image.asset('assets/images/pique.jpg'),
-                ),
-                SizedBox(
-                  width: 50,
-                  height: 20,
-                ),
-                Text('Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat'),
-              ],
-            ),
-            SizedBox(height: 30),
-            Row(
-              children: [
-                Text(
-                  'Barcelona, 21 Februrari 2022',
-                ),
-              ],
-            ),
-            SizedBox(height: 50),
-            Row(
-              children: <Widget>[
-                Container(
-                  child: Image.asset('assets/images/pique.jpg'),
-                ),
-                SizedBox(width: 50, height: 20),
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.black,
-                      width: 1,
+                    SizedBox(
+                      width: 50,
+                      height: 20,
                     ),
-                  ),
-                  child: Text(
-                      'Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat'),
+                    Text(
+                        'Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat'),
+                  ],
                 ),
-              ],
-            ),
-            SizedBox(height: 30),
-            Row(
-              children: [
-                Text('Barcelona, 21 Februrari 2022'),
+                SizedBox(height: 30),
+                Column(
+                  children: <Widget>[
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 1,
+                            ),
+                          ),
+                          child: Text('Barcelona, 21 Februrari 2022'),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                SizedBox(height: 50),
+                Row(
+                  children: <Widget>[
+                    Container(
+                      child: Image.asset('assets/images/pique.jpg'),
+                    ),
+                    SizedBox(width: 50, height: 20),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.black,
+                          width: 1,
+                        ),
+                      ),
+                      child: Text(
+                          'Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat'),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 30),
+                Column(
+                  children: <Widget>[
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.black,
+                              width: 1,
+                            ),
+                          ),
+                          child: Text('Barcelona, 21 Februrari 2022'),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ],
             ),
           ],
