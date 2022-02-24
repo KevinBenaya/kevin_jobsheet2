@@ -77,36 +77,38 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 Text(
                   'BERITA TERBARU',
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 15),
                 ),
                 SizedBox(
                   width: 50,
                 ),
                 Text(
                   'TRANSFER HARIAN',
-                  style: TextStyle(fontSize: 20),
-                ),
-                SizedBox(
-                  height: 50,
+                  style: TextStyle(fontSize: 15),
                 ),
               ],
             ),
             Column(
               children: [
                 Container(
-                  alignment: Alignment.topLeft,
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: Colors.black,
-                      width: 1,
                     ),
                   ),
+                  child: Image.asset('assets/images/costa.jpg',
+                      width: 250, height: 250),
                 ),
-                Image.asset('assets/images/costa.jpg', width: 250, height: 250),
-                Text('Costa Merapat ke Palmeiras',
-                    style: TextStyle(fontSize: 30)),
-                SizedBox(
-                  height: 20,
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                    ),
+                  ),
+                  child: Text(
+                    'Costa Merapat ke Palmeiras',
+                    style: TextStyle(fontSize: 20),
+                  ),
                 ),
               ],
             ),
@@ -117,12 +119,35 @@ class _MyHomePageState extends State<MyHomePage> {
               margin: EdgeInsets.all(10),
               child: Text('Transfer', style: TextStyle(fontSize: 10)),
             ),
-            SizedBox(
-              height: 20,
-            ),
             Column(
               children: <Widget>[
-                Container(
+                Stack(
+                  children: [
+                    Container(
+                      alignment: Alignment.center,
+                      child: Image.asset('assets/images/pique.jpg',
+                          width: 500, height: 500),
+                      height: 100,
+                      width: 100,
+                    ),
+                    Container(
+                      alignment: Alignment.center,
+                      child: Text(
+                          'Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat'),
+                      height: 100,
+                      width: 600,
+                    ),
+                    Container(
+                      alignment: Alignment.bottomLeft,
+                      child: Text(
+                        'Barcelona, 22 Februari 2022',
+                      ),
+                      height: 100,
+                      width: 200,
+                    ),
+                  ],
+                ),
+                /*Container(
                   alignment: Alignment.topLeft,
                   decoration: BoxDecoration(
                     border: Border.all(
@@ -164,7 +189,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       textAlign: (TextAlign.left),
                     ),
                   ],
-                ),
+                ),*/
               ],
             ),
           ],
