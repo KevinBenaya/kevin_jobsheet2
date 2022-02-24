@@ -102,10 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-                Image.asset('assets/images/costa.jpg'),
-                SizedBox(
-                  height: 30,
-                ),
+                Image.asset('assets/images/costa.jpg', width: 250, height: 250),
                 Text('Costa Merapat ke Palmeiras',
                     style: TextStyle(fontSize: 30)),
                 SizedBox(
@@ -135,7 +132,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   child: Row(
                     children: <Widget>[
-                      Image.asset('assets/images/pique.jpg'),
+                      Image.asset('assets/images/pique.jpg',
+                          width: 250, height: 250),
                       Row(
                         children: [
                           SizedBox(
