@@ -70,9 +70,8 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
-        alignment: Alignment.center,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -94,6 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 10,
             ),
             Column(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Container(
                   decoration: BoxDecoration(
@@ -102,9 +102,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   child: Image.asset('assets/images/costa.jpg',
-                      fit: BoxFit.fitHeight, width: 250, height: 250),
+                      fit: BoxFit.fitHeight, width: 500, height: 200),
                 ),
                 Container(
+                  padding: EdgeInsets.symmetric(vertical: 2, horizontal: 156),
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: Colors.black,
@@ -112,10 +113,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   child: Text(
                     'Costa Merapat ke Palmeiras',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 15),
                   ),
                 ),
                 Container(
+                  padding: EdgeInsets.symmetric(vertical: 2, horizontal: 226),
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: Colors.black,
@@ -124,12 +126,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   child: Text(
                     'Transfer',
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(
+                      fontSize: 13,
+                    ),
                   ),
                 ),
               ],
             ),
+            SizedBox(
+              height: 50,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Container(
                   decoration: BoxDecoration(
@@ -140,27 +148,28 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Image.asset(
                     'assets/images/pique.jpg',
                     fit: BoxFit.fitHeight,
-                    width: 200,
-                    height: 200,
+                    width: 100,
+                    height: 100,
                   ),
                 ),
-                SizedBox(
-                  width: 50,
-                ),
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
                     Container(
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 5, vertical: 41),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.black,
                         ),
                       ),
                       child: Text(
-                          'Pique Bilang Wasit Untungkan Madrid,Koeman Tepuk Jidat'),
+                        'Pique Bilang Wasit Untungkan Madrid,Koeman Tepuk Jidat',
+                        style: TextStyle(fontSize: 15),
+                      ),
                     ),
                   ],
                 ),
-                Text('coba'),
               ],
             ),
             Column(
@@ -168,14 +177,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 Row(
                   children: [
                     Container(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 158),
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.black,
                         ),
                       ),
-                      child: Text(
-                        'Barcelona, 22 Februari 2022',
-                      ),
+                      child: Text('Barcelona, 22 Februari 2022',
+                          style: TextStyle(fontSize: 15)),
                     ),
                   ],
                 ),
