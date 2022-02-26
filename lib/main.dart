@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -70,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         alignment: Alignment.center,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -88,6 +90,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
+            SizedBox(
+              height: 10,
+            ),
             Column(
               children: [
                 Container(
@@ -97,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   child: Image.asset('assets/images/costa.jpg',
-                      width: 250, height: 250),
+                      fit: BoxFit.fitHeight, width: 250, height: 250),
                 ),
                 Container(
                   decoration: BoxDecoration(
@@ -110,86 +115,58 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(fontSize: 20),
                   ),
                 ),
-              ],
-            ),
-            Container(
-              color: Colors.pink,
-              alignment: Alignment.topLeft,
-              padding: EdgeInsets.all(10),
-              margin: EdgeInsets.all(10),
-              child: Text('Transfer', style: TextStyle(fontSize: 10)),
-            ),
-            Column(
-              children: <Widget>[
-                Stack(
-                  children: [
-                    Container(
-                      alignment: Alignment.center,
-                      child: Image.asset('assets/images/pique.jpg',
-                          width: 500, height: 500),
-                      height: 100,
-                      width: 100,
-                    ),
-                    Container(
-                      alignment: Alignment.center,
-                      child: Text(
-                          'Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat'),
-                      height: 100,
-                      width: 600,
-                    ),
-                    Container(
-                      alignment: Alignment.bottomLeft,
-                      child: Text(
-                        'Barcelona, 22 Februari 2022',
-                      ),
-                      height: 100,
-                      width: 200,
-                    ),
-                  ],
-                ),
-                /*Container(
-                  alignment: Alignment.topLeft,
+                Container(
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: Colors.black,
-                      width: 1,
                     ),
                   ),
-                  child: Row(
-                    children: <Widget>[
-                      Image.asset('assets/images/pique.jpg',
-                          width: 250, height: 250),
-                      Row(
-                        children: [
-                          SizedBox(
-                            width: 30,
-                          ),
-                          Container(
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.black,
-                                width: 1,
-                              ),
-                            ),
-                            child: Text(
-                                'Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat'),
-                          ),
-                        ],
-                      ),
-                    ],
+                  child: Text('Transfer', style: TextStyle(fontSize: 20)),
+                ),
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                    ),
+                  ),
+                  child: Image.asset(
+                    'assets/images/pique.jpg',
+                    fit: BoxFit.fitHeight,
+                    width: 200,
+                    height: 200,
                   ),
                 ),
                 SizedBox(
-                  height: 50,
+                  width: 50,
                 ),
+                Column(
+                  children: <Widget>[
+                    Text('Pique Bilang Wasit Untungkan Madrid,'),
+                    Text('Koeman Tepuk Jidat'),
+                  ],
+                ),
+              ],
+            ),
+            Column(
+              children: [
                 Row(
                   children: [
-                    Text(
-                      'Barcelona, 21 Februari 2022',
-                      textAlign: (TextAlign.left),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.black,
+                        ),
+                      ),
+                      child: Text(
+                        'Barcelona, 22 Februari 2022',
+                      ),
                     ),
                   ],
-                ),*/
+                ),
               ],
             ),
           ],
