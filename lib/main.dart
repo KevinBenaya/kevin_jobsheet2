@@ -120,8 +120,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     border: Border.all(
                       color: Colors.black,
                     ),
+                    color: Colors.pink,
                   ),
-                  child: Text('Transfer', style: TextStyle(fontSize: 20)),
+                  child: Text(
+                    'Transfer',
+                    style: TextStyle(fontSize: 20),
+                  ),
                 ),
               ],
             ),
@@ -145,10 +149,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Column(
                   children: <Widget>[
-                    Text('Pique Bilang Wasit Untungkan Madrid,'),
-                    Text('Koeman Tepuk Jidat'),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.black,
+                        ),
+                      ),
+                      child: Text(
+                          'Pique Bilang Wasit Untungkan Madrid,Koeman Tepuk Jidat'),
+                    ),
                   ],
                 ),
+                Text('coba'),
               ],
             ),
             Column(
