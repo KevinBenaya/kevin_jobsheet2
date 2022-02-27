@@ -117,19 +117,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(vertical: 2, horizontal: 226),
+                  padding: EdgeInsets.symmetric(vertical: 2, horizontal: 225),
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: Colors.black,
                     ),
                     color: Colors.pink,
                   ),
-                  child: Text(
-                    'Transfer',
-                    style: TextStyle(
-                      fontSize: 13,
-                    ),
-                  ),
+                  child: Text('Transfer',
+                      style: TextStyle(fontSize: 13, color: Colors.white)),
                 ),
               ],
             ),
@@ -177,6 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Row(
                   children: [
                     Container(
+                      alignment: Alignment.bottomLeft,
                       padding:
                           EdgeInsets.symmetric(vertical: 10, horizontal: 158),
                       decoration: BoxDecoration(
